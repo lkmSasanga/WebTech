@@ -1,0 +1,478 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+
+}
+.main-png{
+    display: flex;
+    text-decoration: none;
+    position: absolute;
+    top:18px ;
+    left: 220px;
+    /*width: 6.12px;
+    height: 6.5px;*/
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+    /*-----------------------register form nav tag-------------------------*/
+.register-form{
+    /*height: 150vh;*/
+    padding-top: 60px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+    /*------------------form------------------------------------*/
+
+/*
+.form-nationality{
+    padding-top: 20px;
+    
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+/*-----------------------full name------------------------------------*/
+.form{
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.name{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name,
+    .form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form input:focus + .label-name::after, .form input:valid +
+.label-name::after {
+    transform: translateX(0%);
+}
+/*--------------------------------set gap - id attributes---------------------*/
+/*
+#full-name{
+    padding-top: 20px;
+}
+#name-initials{
+    padding-top: 20px;
+}
+#nationality{
+    padding-top: 20px;
+}
+#gender{
+    padding-top: 20px;
+}
+#age{
+    padding-top: 20px;
+}
+#calender{
+    padding-top: 20px;
+}
+#id-number{
+    padding-top: 20px;
+}
+#address{
+    padding-top: 20px;
+}
+#telephone{
+    padding-top: 20px;
+}
+*/
+/*----------------------------------initial name-------------------------*/
+/*
+.form-initial-name{
+    padding-top: 20px;
+    
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+*/
+
+/*-------------------------nationality------------------------*/
+/*
+
+.form-nationality{
+    padding-top: 20px;
+    
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.name-nationality{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form3 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form3 label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name-nationality{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form3 input:focus + .label-name-nationality .content-name-nationality,
+    .form3 input:valid + .label-name-nationality .content-name-nationality{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form3 input:focus + .label-name-nationality::after, .form3 input:valid +
+.label-name-nationality::after {
+    transform: translateX(0%);
+}
+*/
+/*------------------gender----------------------*/
+.gender{
+    flex-direction: row;
+    font-size: 14px;
+    margin: 10px 0 ;
+    /*color: #5fa8d3;*/
+    color: #4d505a;
+
+
+}
+input[type="radio"]{
+    margin: 0 15px 0 20px;
+    font-size: 14px;
+  }
+.label-name-gender{
+    font-size: 14px;
+    position: relative;
+    right: 185px;
+}
+/*-------------------------------------------*/
+/*---------------------------form4-----------------------------*/
+/*
+.form4{
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.name-age{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form4 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form4 label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name-age{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form4 input:focus + .label-name-age .content-name-age,
+    .form4 input:valid + .label-name-age .content-name-age{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form4 input:focus + .label-name-age::after, .form4 input:valid +
+.label-name-age::after {
+    transform: translateX(0%);
+}
+*/
+/*---------------------------DOB-----------------------==*/
+.date-picker{
+    position: relative;
+    right: 155px;
+    font-size: 14px;
+    color: #4d505a;
+}
+.calendar{
+    position: relative;
+    left: 70px;
+    color: #4d505a;
+
+}
+.submit-date-button{
+    position: relative;
+    left: 100px;
+    color: #4d505a;
+    width: 70px;
+    height: 25px;
+}
+/*-------------------------form5-------------------*/
+/*
+.form5{
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.name-id{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form5 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form5 label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name-id{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form5 input:focus + .label-name-id .content-name-id,
+    .form5 input:valid + .label-name-id .content-name-id{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form5 input:focus + .label-name-id::after, .form5 input:valid +
+.label-name-id::after {
+    transform: translateX(0%);
+}
+*/
+/*-----------------------------form6---------------------*/
+/*
+.form6{
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.name-address{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form6 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form6 label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name-address{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form6 input:focus + .label-name-address .content-name-address,
+    .form6 input:valid + .label-name-address .content-name-address{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form6 input:focus + .label-name-address::after, .form6 input:valid +
+.label-name-address::after {
+    transform: translateX(0%);
+}
+/*-----------------------------form7-----------------------*/
+/*
+.form7{
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.name-address{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 25px;
+    border: none; 
+    outline: none;
+}
+.form7 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    pointer-events:none ;
+    border-bottom: 1px solid black;
+}
+.form7 label::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name-address{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form7 input:focus + .label-name-address .content-name-address,
+    .form7 input:valid + .label-name-address .content-name-address{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form7 input:focus + .label-name-address::after, .form7 input:valid +
+.label-name-address::after {
+    transform: translateX(0%);
+}
+*/
+/*----------------------exam-label---------------*/
+.exam-label{
+    position: relative;
+    right: 190px;
+    font-size: 14px;
+    color: #4d505a;
+}
