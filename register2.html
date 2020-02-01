@@ -13,16 +13,16 @@
             <!--alt + shift + down copy lines easy-->
             <ul class="nav-links">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="nav-link nav-link-ltr">Home</a>
                 </li>
                 <li>
-                    <a href="#">Register</a>
+                    <a href="register.html" class="nav-link nav-link-ltr">Register</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#" class="nav-link nav-link-ltr">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact </a>
+                    <a href="#" class="nav-link nav-link-ltr">Contact </a>
                 </li>
                 
             </ul>
@@ -110,10 +110,19 @@
                 </label>
             </div>
 
-            <div>
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            <div class="container-button" id="button-container" style="position: relative;right: 180px;">
+                <button class="btn btn1" onclick="location.href='register2.html'" value="register">Next</button>
             </div>
+<!--
+            <div class="back-button">
+                <div class="container-back-button" id="button-container">
+                    <button class="btn btn1" onclick="location.href='register.html'" value="register">back
+                        
+                    </button>
+                </div>
+            </div>
+-->
+
         </div>
         
     </body>
