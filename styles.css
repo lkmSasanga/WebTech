@@ -241,24 +241,17 @@ input[type='radio']:checked:after {
 /*---------------------------DOB-----------------------==*/
 .date-picker{
     position: relative;
-    padding-right: 254px;
+    padding-right: 250px;
     left: 0px;
     font-size: 14px;
     color: #4d505a;
 }
 .calendar{
     position: relative;
-    left: 70px;
+    left: 160px;
+    padding-right: 73px;
     color: #4d505a;
 
-}
-.submit-date-button{
-    position: relative;
-    left: 100px;
-    color: #4d505a;
-    width: 70px;
-    height: 25px;
-    border-radius: 4px;
 }
 
 /*----------------------exam-label---------------*/
@@ -387,6 +380,8 @@ footer p{
     /*border-color: white;*/
     pointer-events: fill;
     border-bottom: 0.1px solid #5fa8d3;
+    color: #4d505a;
+
 
 }
 .table-input:hover{

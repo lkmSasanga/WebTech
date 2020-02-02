@@ -32,22 +32,34 @@
         <div class="register-form">
         
             <div class="form" id="full-name"> 
-                <input type="text" class = "name" type="text" name="name"
-                autocomplete="off" required/>
+                <input type="text" class = "name" type="text" name="name" 
+
+                onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+
+                autocomplete="off" required />
                 <label for="name" class="label-name">
-                    <span class="content-name">Full Name</span>
+                    <span class="content-name">Full Name (USE CAPITALS)</span>
                 </label>
 
             </div>
             <div class="form" id = "name-initials">
-                <input type="text" class = "name" type="text" name="name"
-                autocomplete="off" required/>
+                <input type="text" class = "name" type="text" name="name" 
+                
+                onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+
+                autocomplete="off" required />
                 <label for="name" class="label-name">
-                    <span class="content-name">Name with Initials</span>
+                    <span class="content-name">Name with Initials (USE CAPITALS)</span>
                 </label>
             </div>
             <div class="form" id="nationality">
                 <input type="text" class = "name" type="text" name="name"
+
+                onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">Nationality</span>
@@ -63,7 +75,9 @@
             </div>
 
             <div class="form" id="age">
-                <input type="text" class = "name" type="text" name="name"
+                <input type="text" class = "name" type="text" name="name" 
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  
+                maxlength="2" 
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">Age</span>
@@ -72,7 +86,7 @@
 
             <form action="/action_page.php" class="date-picker" id="calender">
                 Date of Birth <input type="date" name="bday" class="calendar">
-                <input type="submit" class="submit-date-button">
+                
             </form>
 
             <div class="form" id = "id-number">
@@ -85,6 +99,10 @@
 
             <div class="form" id="address">
                 <input type="text" class = "name" type="text" name="name"
+
+                onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">Address</span>
@@ -93,6 +111,10 @@
 
             <div class="form" id="telephone">
                 <input type="text" class = "name" type="text" name="name"
+
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  
+                maxlength="10" 
+
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">Telephone</span>
