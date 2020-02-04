@@ -196,6 +196,9 @@ nav{
 .label-name::after {
     transform: translateX(0%);
 }
+/*-------------------------initial name ------------------------*/
+
+
 
 /*------------------gender----------------------*/
 .gender{

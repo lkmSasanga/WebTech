@@ -29,10 +29,12 @@
                 
             </ul>
         </nav>
+        <form action="connectData.php" method="POST">
+
         <div class="register-form">
         
             <div class="form" id="full-name"> 
-                <input type="text" class = "name" type="text" name="name" 
+                <input type="text" class = "name" type="text" name="fullName" 
 
                 onkeypress="return (event.charCode > 64 && 
                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
@@ -44,7 +46,7 @@
 
             </div>
             <div class="form" id = "name-initials">
-                <input type="text" class = "name" type="text" name="name" 
+                <input type="text" class = "name" type="text" name="initialName" 
                 
                 onkeypress="return (event.charCode > 64 && 
                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
@@ -55,7 +57,7 @@
                 </label>
             </div>
             <div class="form" id="nationality">
-                <input type="text" class = "name" type="text" name="name"
+                <input type="text" class = "name" type="text" name="nationality"
 
                 onkeypress="return (event.charCode > 64 && 
                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
@@ -70,12 +72,12 @@
             -->
             <div class="gender" id="gender">
                 <label for="gender" class="label-name-gender" >Gender</label>
-                <input type="radio" class="male" name="gender"  value="male" > Male
-                <input type="radio" class="female" name="gender" value="female"> Female
+                <input type="radio" class="male" name="male"  value="male" required> Male
+                <input type="radio" class="female" name="female" value="female" required> Female
             </div>
 
             <div class="form" id="age">
-                <input type="text" class = "name" type="text" name="name" 
+                <input type="text" class = "name" type="text" name="age" 
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  
                 maxlength="2" 
                 autocomplete="off" required/>
@@ -84,13 +86,13 @@
                 </label>
             </div>
 
-            <form action="/action_page.php" class="date-picker" id="calender">
-                Date of Birth <input type="date" name="bday" class="calendar">
+            <div class="date-picker" id="calender">
+                Date of Birth <input type="date" name="birthday" class="calendar" required>
                 
-            </form>
+            </div>
 
             <div class="form" id = "id-number">
-                <input type="text" class = "name" type="text" name="name"
+                <input type="text" class = "name" type="text" name="idNumber"
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">National ID Number</span>
@@ -98,7 +100,7 @@
             </div>
 
             <div class="form" id="address">
-                <input type="text" class = "name" type="text" name="name"
+                <input type="text" class = "name" type="text" name="address"
 
                 onkeypress="return (event.charCode > 64 && 
                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
@@ -110,7 +112,7 @@
             </div>
 
             <div class="form" id="telephone">
-                <input type="text" class = "name" type="text" name="name"
+                <input type="text" class = "name" type="text" name="telephone"
 
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  
                 maxlength="10" 
@@ -122,13 +124,13 @@
             </div>
 
             <div class="form" id="name">
-                <input type="name" class = "name" type="email" name="name"
+                <input type="name" class = "name" type="email" name="email"
                 autocomplete="off" required/>
                 <label for="name" class="label-name">
                     <span class="content-name">Email</span>
                 </label>
             </div>
-
+            </form>
 
             <!-- ----------------------remove after the button next------------------------- -->
 

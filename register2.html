@@ -28,6 +28,7 @@
                 
             </ul>
         </nav>
+        <form action="connectData.php" method="POST">
 
         <div class="register-form"> 
             <table class="exam-table">
@@ -44,128 +45,128 @@
                 <tr class="table-row">
                     <th>Year</th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="firstAttemptYear" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="secondAttemptYear" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="thirdAttemptYear" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                     </th>
                 </tr>
                 <tr class="table-row">
                     <th>Physics</th>
                     <th>
-                        <input type="text" name="name" class="table-input" 
+                        <input type="text" name="firstAttemptPhy" class="table-input" 
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
+                        <input type="text" name="secondAttemptPhy" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
+                        <input type="text" name="thirdAttemptPhy" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                 </tr>
                 <tr class="table-row">
                     <th>Chemistry</th>
                     <th>
-                        <input type="text" name="name" class="table-input" 
+                        <input type="text" name="firstAttemptChem" class="table-input" 
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
+                        <input type="text" name="secondAttemptChem" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
-                    <th><input type="text" name="name" class="table-input"
+                    <th><input type="text" name="thirdAttemptChem" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                 <tr class="table-row">
                     <th>Combined Mathematics</th>
                     <th>
-                        <input type="text" name="name" class="table-input" 
+                        <input type="text" name="firstAttemptComMaths" class="table-input" 
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
+                        <input type="text" name="secondAttemptComMaths" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
-                    <th><input type="text" name="name" class="table-input"
+                    <th><input type="text" name="thirdAttemptComMaths" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                 <tr class="table-row">
                     <th>Advanced Mathematics</th>
                     <th>
-                        <input type="text" name="name" class="table-input" 
+                        <input type="text" name="firstAttemptAdvMaths" class="table-input" 
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
+                        <input type="text" name="secondAttemptAdvMaths" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
-                    <th><input type="text" name="name" class="table-input"
+                    <th><input type="text" name="thirdAttemptAdvMaths" class="table-input"
                         onkeypress="return (event.charCode > 64 && 
-                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
                     </th>
                 <tr class="table-row">
                     <th>Index Number</th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="firstAttemptIndex" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="secondAttemptIndex" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                     </th>
                     <th>
-                        <input type="text" name="name" class="table-input"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                        <input type="text" name="thirdAttemptIndex" class="table-input"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                     </th>
                 </tr>
                 <tr class="table-row">
                     <th>Z-Score</th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
+                    <th><input type="text" name="firstAttemptZ" class="table-input" required></th>
+                    <th><input type="text" name="secondAttemptZ" class="table-input" required></th>
+                    <th><input type="text" name="thirdAttemptZ" class="table-input" required></th>
                 </tr>
                 <tr class="table-row">
-                    <th>Please Indicate if your <br> Z-score is Minus(M)</th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
+                    <th>Please Indicate if your <br> Z-score is Minus (M)</th>
+                    <th><input type="text" name="firstAttemptMinus" class="table-input" required></th>
+                    <th><input type="text" name="secondAttemptMinus" class="table-input" required></th>
+                    <th><input type="text" name="thirdAttemptMinus" class="table-input" required></th>
                 </tr>
                 <tr class="table-row">
                     <th>Result of the year to be <br> Considered for Selection</th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
-                    <th><input type="text" name="name" class="table-input"></th>
+                    <th><input type="text" name="firstAttemptResult" class="table-input" required></th>
+                    <th><input type="text" name="secondAttemptResult" class="table-input" required></th>
+                    <th><input type="text" name="thirdAttempResult" class="table-input" required></th>
                 </tr>
             </table>
 
             <div class="medium" id="medium">
                 <label for="medium" class="label-name-medium" >Medium which you Wish to sit the Aptitute Test</label>
-                <input type="radio" class="sinhala" name="medium"  value="sinhala" > Sinhala
-                <input type="radio" class="english" name="medium" value="english"> English
-                <input type="radio" class="tamil" name="medium" value="tamil"> Tamil
+                <input type="radio" class="sinhala" name="testMediumS"  value="sinhala" required> Sinhala
+                <input type="radio" class="english" name="testMediumE" value="english" required> English
+                <input type="radio" class="tamil" name="testMediumT" value="tamil" required> Tamil
             </div>
 
             <div class="container-button" id="button-container" style="position: relative;right: 180px;padding-top: 55px;">
-                <button class="btn btn1" value="register" onclick="return detailssubmit()">Submit</button>
+                <button class="btn btn1" value="register" type="submit" onclick="return detailssubmit()">Submit</button>
             </div>
 <!--
             <div class="back-button">
@@ -179,7 +180,7 @@
 
         </div>
         
-
+        </form>>
 
 
         <footer>
